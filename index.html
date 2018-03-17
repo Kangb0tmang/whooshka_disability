@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Whooshka Disability Carspots</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="./public/css/main.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center align">
+          <a href="http://whooshka.me/" title="To The Whooshka Site" target="_blank">
+            <img src="./public/images/logo.png" alt="Whooshka">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-tools container">
+    <div class="row">
+      <div class="col s6 l2 marker-legend center-align">
+        <div class="general-carspot-image-container">
+          <img src="./public/images/general_carspot_small.png" alt="General Parking Spot">
+        </div>
+        <h6>General Parking Spot</h6>
+      </div>
+
+      <div class="col s6 l2 marker-legend center-align">
+        <div class="disabled-carspot-image-container">
+          <img src="./public/images/disabled_carspot_small.png" alt="Disabled Parking Spot">
+        </div>
+        <h6>Disabled Parking Spot</h6>
+      </div>
+
+      <div class="col s6 l2 offset-l4 filter-carspots center-align">
+        <a class="btn-floating btn-large waves-effect waves-light green accent-2" onclick="initMap()"> <i class="material-icons">refresh</i></a>
+        <h6>Show All Spots</h6>
+      </div>
+
+      <div class="col s6 l2 filter-carspots center-align">
+        <a class="btn-floating btn-large waves-effect waves-light light-blue accent-2" onclick="redrawDisabledSpots()"> <i class="material-icons">accessible</i></a>
+        <h6>Show Disabled Spots</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 l4 offset-l8 filter-message center-align">
+        <span>Click to refresh and update parking spots</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="map"></div>
+  </div>
+
+  <footer>
+    <div class="footer-copyright">
+      &copy;
+        <script>
+          var date = new Date
+          var currentYear = date.getFullYear();
+          document.write(currentYear)
+        </script>
+      Whooshka
+    </div>
+    <span>Map built by: Jon Kang. Website built by: Gurdev Singh</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./public/javascript/app.js"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZcZx3Z53gbEDjwIbjaFSJeUAHK07D6i4&callback=initMap"></script>
+  <script src="./public/javascript/map.js"></script>
+
+</body>
+</html>

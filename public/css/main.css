@@ -1,0 +1,47 @@
+body {
+  margin: 0 auto;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  margin-top: 40px;
+}
+
+.filter-carspots > h6 {
+  margin-bottom: 0;
+}
+
+.btn-large i {
+  font-size: 2rem;
+}
+
+.marker-legend > h6 {
+  margin: 0;
+}
+
+.filter-message {
+  color: #F3154E;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #F3154E;
+  color: #ffffff;
+  margin-top: 50px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .search-tools .row {
+    display: block;
+  }
+
+  .marker-legend {
+    margin-bottom: 20px;
+  }
+}
