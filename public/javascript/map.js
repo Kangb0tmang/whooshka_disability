@@ -15,6 +15,8 @@ function initMap() {
       icon: './public/images/general_carspot_icon.png'
     });
   });
+
+  // Marker Cluster Code and options
   var options =  {
     minimumClusterSize: 3,
     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
